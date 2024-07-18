@@ -1,0 +1,784 @@
+/* Reset and general styles */
+body {
+    font-family: Urbanist, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff86;
+}
+
+/* Promotion bar at the top */
+
+.promotion-bar {
+    background-color: rgb(236, 236, 177); 
+    color: hsl(0, 0%, 0%); /* White text color */
+    padding: 15px 20px; /* Adjust padding for top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1001; /* Ensure it's above other elements */
+    position: fixed; /* Fixed position */
+    height: 20px; /* Adjust height as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the height calculation */
+}
+
+.promo-text {
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: rgb(87, 87, 87);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: rgb(73, 73, 73);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+@media (max-width: 890px) {
+    header {
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 750px) {
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 100vh; /* This height might be excessive, consider adjusting */
+        background: #f8f8f8e5; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 10px;
+        transition: all .42s;
+    }
+
+    .navmenu a {
+        display: block;
+        margin: 18px 0; 
+    }
+
+    .navmenu.open {
+        right: 0;
+    }
+}
+
+/* Main content container */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 100px; /* Adjust based on the height of your header and promo bar */
+}
+
+.section--lg {
+    padding: 40px 0;
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: urbanist;
+}
+
+/* Cart table and related styles */
+.table__container {
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 4px;
+    padding: 20px;
+    margin-bottom: 20px; /* Added margin bottom */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table__title {
+    font-size: 18px;
+    margin: 0;
+    font-family: urbanist;
+}
+
+.table__price {
+    font-size: 16px;
+    color: #666;
+}
+
+.product-image {
+    width: 250px;
+}
+
+.quantity {
+    width: 60px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.table__trash {
+    color: #000000;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.table__trash:hover {
+    color: #000000;
+    size: 2px;
+}
+
+/* CSS styles for cart and related sections */
+
+.cart__group {
+    display: flex;
+    gap: 20px;
+}
+
+.cart__left {
+    flex: 3;
+}
+
+.cart__right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap as per your design */
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust margin as needed */
+    font-family: urbanist;
+}
+
+.cart__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cart__actions .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #000000;
+    color: #fff;
+}
+
+.cart__actions .btn:hover {
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.applybutton {
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #000000;
+    color: #fff;
+}
+
+.applybutton:hover {
+    background-color: #f1f1f1;
+    color: #000;
+   
+}
+
+.applybutton i {
+    margin-right: 5px;
+}
+
+
+.cart__total-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart__total-title {
+    font-size: 16px;
+    color: #666;
+}
+
+.cart__total-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Apply Coupon Section Styles */
+.apply-coupon {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form__group--horizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form__input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.btn.flex.btn--sm {
+    margin-top: 10px;
+}
+.coupons-dropdown {
+    position: absolute;
+    top: calc(100% + 10px); /* Position right below the Apply Coupon box */
+    left: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 4px 4px 4px 4px;
+    display: none;
+    padding: 20px;
+    width: calc(100% - 42px); /* Adjust width to match the Apply Coupon box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.coupons-dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.coupons-dropdown ul li {
+    margin-bottom: 25px; /* Adjust margin between list items */
+    font-family: urbanist;
+}
+.coupons-dropdown ul li strong {
+    font-weight: bold;
+    font-size: 22px; /* Adjust font size */
+}
+
+.coupons-dropdown ul li p {
+    font-size: 16px; /* Font size for description text */
+    color: #666; /* Text color */
+    margin-top: 5px; /* Adjust top margin */
+}
+
+.coupons-dropdown ul li button.apply-coupon-btn {
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 5px; /* Margin between description and apply button */
+    margin-bottom: 10px; /* Margin after the button and before the next coupon */
+    display: block; /* Ensure button takes full width of the container */
+}
+
+.coupons-dropdown ul li button.apply-coupon-btn:hover {
+    background-color: #0056b3;
+}
+
+.show-coupons {
+    margin-top: 10px;
+}
+
+.show-coupons a {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.show-coupons a:hover {
+    text-decoration: underline;
+}
+.cart-totals {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.section__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.cart__total-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.cart__total-table td {
+    padding: 10px;
+}
+
+.cart__total-title {
+    font-size: 16px;
+    color: #666;
+    padding-right: 20px;
+}
+
+.cart__total-price {
+    font-size: 16px;
+    color: #333;
+}
+
+.cart__total-table tr:last-child td {
+    border-top: 1px solid #ddd; /* Adding border only above the last row */
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: #000000;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #eeeeee;
+    color: #000;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+.footer {
+    background-color:hsl(0, 0%, 97%);;
+    color: #000000;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    margin: 10px 0;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.quick-links, .collections-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li, .collections-links li {
+    margin: 5px 0;
+}
+
+.quick-links li a, .collections-links li a {
+    color: #363636cb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.quick-links li a:hover, .collections-links li a:hover {
+    color: #1f1f1f;
+}
+
+.social-icons, .shop-icons {
+    display: flex;
+}
+
+.social-icon, .shop-icon {
+    margin-right: 15px;
+}
+
+.social-icon img, .shop-icon img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover, .shop-icon img:hover {
+    transform: scale(1.2);
+}
+
+.quick-contact-form input, .quick-contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.quick-contact-form button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quick-contact-form button:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    
+    .section--lg {
+        padding: 10px 0;
+    }
+    
+    .section__title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        font-family: Urbanist, sans-serif;
+    }
+    
+    /* Cart table and related styles */
+    .table__container {
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        border-radius: 4px;
+        margin: 0 auto; /* Center the table container */
+        overflow-x: auto; /* Allow horizontal scrolling on smaller screens */
+        padding: 0 20px; /* Add padding to the sides */
+    }
+    
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .table th, .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 14px;
+    }
+    
+    .table__title {
+        font-size: 16px;
+        margin: 0;
+        font-family: Urbanist, sans-serif;
+    }
+    
+    .table__price {
+        font-size: 14px;
+        color: #666;
+    }
+    
+    .product-image {
+        width: 80px;
+    }
+    
+    .quantity {
+        width: 40px;
+        padding: 8px;
+        font-size: 14px;
+    }
+    
+    .table__trash {
+        font-size: 14px;
+        cursor: pointer;
+        color: #000000;
+    }
+    
+    /* CSS styles for cart and related sections */
+    .cart {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    .cart__group {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    .cart__left, .cart__right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .cart__actions {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    
+    .cart__actions a {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .apply-coupon .form__group--horizontal {
+        flex-direction: column;
+    }
+    
+    .apply-coupon .form__input {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .coupons-dropdown ul {
+        padding-left: 0;
+    }
+    
+    .coupons-dropdown li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    
+    .coupons-dropdown button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    /* Adjustments for smaller screens */
+    @media (max-width: 480px) {
+        .container {
+            padding: 20px 5px; /* Adjusted padding */
+        }
+
+        .table th, .table td {
+            padding: 20px; /* Adjusted padding */
+            font-size: 12px; /* Adjusted font size */
+        }
+        
+        .cart__actions a {
+            padding: 30px; /* Adjusted padding */
+            font-size: 12px; /* Adjusted font size */
+        }
+        
+        .apply-coupon .form__input {
+            padding: 8px; /* Adjusted padding */
+            font-size: 12px; /* Adjusted font size */
+        }
+        
+        .table__title, .table__price {
+            font-size: 12px; /* Adjusted font size */
+        }
+        
+        /* Add margins to sections */
+        .section__title {
+            margin-bottom: 15px; /* Increased margin */
+        }
+        
+        .cart__group {
+            margin: 15px 0; /* Added margin */
+        }
+        
+        .cart__left, .cart__right {
+            margin-bottom: 30px; /* Increased margin */
+        }
+        
+        .cart__actions {
+            margin: 15px 0; /* Added margin */
+        }
+        
+        .cart__actions a {
+            margin-bottom: 15px; /* Increased margin */
+        }
+        
+        .apply-coupon .form__input {
+            margin-bottom: 15px; /* Increased margin */
+        }
+        
+        .coupons-dropdown li {
+            margin-bottom: 15px; /* Increased margin */
+        }
+    }
+}

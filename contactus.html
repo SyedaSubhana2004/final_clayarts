@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - ClayArts Ceramic Name Plates</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<style>
+  body {
+    .promotion-bar {
+    background-color: rgb(236, 236, 177); 
+    color: hsl(0, 0%, 0%); /* White text color */
+    padding: 15px 20px; /* Adjust padding for top and bottom */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other elements */
+    position:fixed; /* Fixed position */
+    height: 20px; /* Adjust height as needed */
+    box-sizing: border-box; /* Ensure padding and border are included in the height calculation */
+}
+
+.promo-text {
+    font-weight: bold;
+    text-align: center;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 30px;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+}
+
+header img {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header i {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.navmenu a {
+    color: black;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.navmenu a:hover {
+    color: rgb(87, 87, 87);
+}
+
+.nav-icon {
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i {
+    margin-right: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+
+.nav-icon i:hover {
+    transform: scale(1.1);
+    color: rgb(73, 73, 73);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: black;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+@media (max-width: 890px) {
+    header {
+        padding: 20px 3%;
+        transition: .4s;
+    }
+}
+
+@media (max-width: 750px) {
+    .navmenu {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 200px;
+        height: 100vh; /* This height might be excessive, consider adjusting */
+        background: #f8f8f8e5; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+        padding: 10px 10px;
+        transition: all .42s;
+    }
+
+    .navmenu a {
+        display: block;
+        margin: 18px 0; 
+    }
+
+    .navmenu.open {
+        right: 0;
+    }
+}
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 150px;
+  }
+
+  h1 {
+    text-align: center;
+    color: #2a0101;
+  }
+
+  .contact-info p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+
+  .contact-info p strong {
+    color: #2a0101;
+  }
+
+  .contact-form input, .contact-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+
+  .contact-form button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    background-color:#2a0101;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-sizing: border-box;
+  }
+
+  .contact-form button:hover {
+    background-color: #ffffff;
+    color: #2a0101;
+  }
+  .footer {
+    background-color:hsl(0, 0%, 97%);;
+    color: #000000;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    margin: 10px 0;
+    font-weight: 300;
+    line-height: 1.6;
+}
+.footer-section p{
+    color: #363636cb;
+    text-decoration: none;
+    transition: color 0.3s;
+    font-family: urbanist;
+}
+.quick-links, .collections-links {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li, .collections-links li {
+    margin: 5px 0;
+}
+
+.quick-links li a, .collections-links li a {
+    color: #363636cb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.quick-links li a:hover, .collections-links li a:hover {
+    color: #1f1f1f;
+}
+
+.social-icons, .shop-icons {
+    display: flex;
+}
+
+.social-icon, .shop-icon {
+    margin-right: 15px;
+}
+
+.social-icon img, .shop-icon img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon img:hover, .shop-icon img:hover {
+    transform: scale(1.2);
+}
+
+.quick-contact-form input, .quick-contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.quick-contact-form button {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quick-contact-form button:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+</style>
+</head>
+<body>
+  <div class="promotion-bar" id="promotionBar" data-aos="fade-down">
+    <span class="promo-text">100 Rupees Off on First Order</span>
+  </div>
+
+  <header>
+      <a href="#" class="logo">
+          <img src="images/logo.jpeg" alt="ClayArt">
+      </a>
+      
+      <ul class="navmenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#nameplate-product-list">Nameplates</a></li>
+          <li><a href="#rtn-product-list">Royal Touch</a></li>
+          <li><a href="#">Customize Now</a></li>
+      </ul>
+
+      <div class="nav-icon">
+          <a href="#"><i class="bx bx-search"></i></a>
+          <a href="#"><i class="bx bx-user"></i></a>
+          <a href="Cart.html"><i class="bx bx-cart"></i></a>
+
+          <!-- Example for Boxicons using custom class -->
+          <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+  </header>
+  <div class="container">
+    <h1>Contact Us</h1>
+    <div class="contact-info">
+      <p><strong>Email:</strong> clayarts41@gmail.com</p>
+      <p><strong>Phone:</strong> +91 78920 26206</p>
+      <p><strong>Address:</strong> Bangalore, Karnataka</p>
+    </div>
+    <div class="contact-form">
+      <form id="contactForm">
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit" id="sendMessageBtn">Send Message</button>
+      </form>
+    </div>
+  </div>
+  <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>Clay Art provides high-quality customizable name plates for your home and office. Explore our unique designs and craftsmanship.</p>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Email: clayarts41@gmail.com</p>
+            <p>Phone: +91 7892026206</p>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61558770362937" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/ceramic_name_plates?igsh=NHl1Z2gzY3loNzJp" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Also Shop On</h3>
+            <div class="shop-icons">
+                <a href="https://www.amazon.in/dp/B0916276KW?ref=myi_title_dp" class="shop-icon"><img src="images/amazon.jpg" alt="Amazon"></a>
+                <a href="https://www.flipkart.com/clayarts-ceramic-wooden-wall-decor-name-plate/p/itmc58a4ea9f4ace?pid=NPLGEVW4V9HRZHTB&q=ceramic+name+plates&store=arb%2Fa77%2Fz9k&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=32a4dcec-df7a-4f66-9bd3-62e5bbce4870.NPLGEVW4V9HRZHTB.SEARCH&ppt=hp&ppn=homepage&ssid=ubqry3dpbk0000001718716460498&qH=4b4453be13d9f476" class="shop-icon"><img src="images/flipkart.png" alt="Flipkart"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="quick-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Shipping & Return Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Collections</h3>
+            <ul class="collections-links">
+                <li><a href="#">Name Plates</a></li>
+                <li><a href="#">Dashavatar</a></li>
+                <li><a href="#">Royal Touch Name Plates</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Contact</h3>
+            <form class="quick-contact-form">
+                <input type="email" placeholder="Enter your e-mail*" required>
+                <textarea placeholder="Write your message*" required></textarea>
+                <button type="submit">GET IN TOUCH</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 ClayArt. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="navi.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Change button text to confirmation message
+      const confirmationMsg = 'Thank you, ' + name + '! Your message has been sent.';
+      document.getElementById('sendMessageBtn').textContent = confirmationMsg;
+
+      // Optionally, you can reset the form after submission
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+
+</body>
+</html>
