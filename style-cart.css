@@ -813,15 +813,16 @@ header i {
     .cart-form {
         padding: 0.5rem; /* Adjust padding */
     }
-
     .cart-item {
-        flex-direction: column; /* Stack items vertically */
-        padding: 0.5rem 0; /* Adjust padding for vertical stacking */
-        margin-bottom: 0.5rem; /* Increase space between items */
+        display: flex;
+        flex-direction: row; /* Keep items in a row */
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        padding: 1rem 0;
+        margin-bottom: 1rem; /* Add space between items */
     }
-
     .product-image {
-        width: 30%; /* Adjust image size for smaller screens */
+        width: 40%; /* Adjust image size for smaller screens */
         margin-bottom: 0.5rem; /* Margin below the image */
     }
 
