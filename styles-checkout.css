@@ -569,7 +569,7 @@ header i {
     .form__input,
     .textarea {
         box-sizing: border-box; /* Ensure padding is included in the width calculation */
-        width: 85%; /* Adjust width */
+        width: 65%; /* Adjust width */
         padding: 0.5rem; /* Add padding inside input fields */
         margin: 0.5rem auto; /* Add margin to ensure not touching borders */
         font-size: 0.9rem; /* Adjust input field font size */
