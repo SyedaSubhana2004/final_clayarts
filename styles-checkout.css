@@ -536,7 +536,7 @@ header i {
     .textarea {
         box-sizing: border-box; /* Ensure padding is included in the width calculation */
         width: 100%; /* Full width */
-        font-size: 0.9rem; /* Adjust form input and textarea font size */
+        font-size: 0.7rem; /* Adjust form input and textarea font size */
         padding: 0.5rem; /* Adjust padding inside input fields */
         margin: 0.5rem 0; /* Add margin to ensure not touching borders */
     }
@@ -622,6 +622,6 @@ header i {
         width: 100%; /* Full width */
         padding: 0.5rem; /* Add padding inside input fields */
         margin: 0.5rem 0; /* Add margin to ensure not touching borders */
-        font-size: 0.9rem; /* Adjust input field font size */
+        font-size: 0.7rem; /* Adjust input field font size */
     }
 }
