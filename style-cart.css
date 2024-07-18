@@ -650,7 +650,7 @@ header i {
         margin: 20px 0; /* Increased margin */
     }
     
-    .cart__left, .cart__right {
+    ..cart__right {
         width: 100%;
         margin-bottom: 30px; /* Increased margin */
     }
@@ -715,20 +715,13 @@ header i {
         font-size: 12px; /* Adjusted font size */
     }
     
-    .table__title, .table__price {
-        font-size: 12px; /* Adjusted font size */
-    }
     
-    /* Add margins to sections */
-    .section__title {
-        margin-bottom: 20px; /* Increased margin */
-    }
     
     .cart__group {
         margin: 20px 0; /* Added margin */
     }
     
-    .cart__left, .cart__right {
+    .cart__right {
         margin-bottom: 40px; /* Increased margin */
     }
     
@@ -764,7 +757,7 @@ header i {
     }
 
     .product-image {
-        width: 40%; /* Keep image size proportional */
+        width: 30%; /* Keep image size proportional */
         margin-right: 2%; /* Maintain spacing between image and details */
     }
 
@@ -773,18 +766,18 @@ header i {
     }
 
     .item-name {
-        font-size: 1.2rem; /* Adjust font size for readability */
+        font-size: 1rem; /* Adjust font size for readability */
         margin-bottom: 0.5rem;
     }
 
     .item-price {
-        font-size: 1.2rem; /* Maintain readability */
+        font-size: 0.8rem; /* Maintain readability */
         color: #666;
     }
 
     .item-quantity {
         margin-top: 1rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .item-quantity label {
@@ -828,7 +821,7 @@ header i {
     }
 
     .product-image {
-        width: 50%; /* Adjust image size for smaller screens */
+        width: 30%; /* Adjust image size for smaller screens */
         margin-bottom: 0.5rem; /* Margin below the image */
     }
 
