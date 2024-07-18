@@ -428,6 +428,7 @@ header i {
 /* Media queries for responsive design */
 
 /* Tablets and smaller screens */
+/* Larger screens */
 @media (max-width: 1024px) {
     .checkout__grid,
     .checkout__group {
@@ -468,13 +469,22 @@ header i {
         font-size: 1.2rem; /* Adjust checkout button font size */
         padding: 0.75rem 1.5rem; /* Adjust checkout button padding */
     }
+
+    .form__input,
+    .textarea {
+        padding: 0.5rem; /* Add padding inside input fields */
+        margin: 0.5rem 0; /* Add margin to ensure not touching borders */
+        font-size: 1rem; /* Adjust input field font size */
+    }
 }
 
-/* Phones and smaller screens */
+/* Medium screens */
 @media (max-width: 768px) {
     .form__input,
     .textarea {
         font-size: 0.9rem; /* Adjust form input and textarea font size */
+        padding: 0.5rem; /* Adjust padding inside input fields */
+        margin: 0.5rem 0; /* Add margin to ensure not touching borders */
     }
 
     .navbar-top {
@@ -548,5 +558,12 @@ header i {
     .btn--checkout {
         font-size: 0.9rem; /* Adjust checkout button font size */
         padding: 0.5rem 1rem; /* Adjust checkout button padding */
+    }
+
+    .form__input,
+    .textarea {
+        padding: 0.5rem; /* Add padding inside input fields */
+        margin: 0.5rem 0; /* Add margin to ensure not touching borders */
+        font-size: 0.9rem; /* Adjust input field font size */
     }
 }
