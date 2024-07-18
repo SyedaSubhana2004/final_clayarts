@@ -478,10 +478,64 @@ header i {
     }
 }
 
+/* Larger screens */
+@media (max-width: 1024px) {
+    .checkout__grid,
+    .checkout__group {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .order__table th,
+    .order__table td,
+    .summary__table td {
+        padding: 0.5rem; /* Adjust table cell padding */
+    }
+
+    .order__img {
+        width: 80px; /* Adjust order image size */
+    }
+
+    .order__title {
+        font-size: 1rem; /* Adjust order title font size */
+    }
+
+    .table__quantity {
+        font-size: 1rem; /* Adjust table quantity font size */
+    }
+
+    .summary__title {
+        font-size: 1rem; /* Adjust summary title font size */
+    }
+
+    .summary__price {
+        font-size: 1.2rem; /* Adjust summary price font size */
+    }
+
+    .payment__label {
+        font-size: 1rem; /* Adjust payment label font size */
+    }
+
+    .btn--checkout {
+        font-size: 1.2rem; /* Adjust checkout button font size */
+        padding: 0.75rem 1.5rem; /* Adjust checkout button padding */
+    }
+
+    .form__input,
+    .textarea {
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
+        width: 100%; /* Full width */
+        padding: 0.5rem; /* Add padding inside input fields */
+        margin: 0.5rem 0; /* Add margin to ensure not touching borders */
+        font-size: 1rem; /* Adjust input field font size */
+    }
+}
+
 /* Medium screens */
 @media (max-width: 768px) {
     .form__input,
     .textarea {
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
+        width: 100%; /* Full width */
         font-size: 0.9rem; /* Adjust form input and textarea font size */
         padding: 0.5rem; /* Adjust padding inside input fields */
         margin: 0.5rem 0; /* Add margin to ensure not touching borders */
@@ -492,7 +546,9 @@ header i {
     }
 
     .search-bar input {
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
         padding: 10px; /* Adjust search bar input padding */
+        width: 100%; /* Full width */
     }
 
     .right-icons a {
@@ -562,6 +618,8 @@ header i {
 
     .form__input,
     .textarea {
+        box-sizing: border-box; /* Ensure padding is included in the width calculation */
+        width: 100%; /* Full width */
         padding: 0.5rem; /* Add padding inside input fields */
         margin: 0.5rem 0; /* Add margin to ensure not touching borders */
         font-size: 0.9rem; /* Adjust input field font size */
