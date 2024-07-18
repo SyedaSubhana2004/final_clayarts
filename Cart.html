@@ -37,39 +37,40 @@
     </header>
     
     <section class="cart section--lg container">
+        <h2 class="cart-heading" style="font-size: 2.5rem;">Your Cart</h2>
         <div class="cart__group">
             <div class="cart__left">
-                <div class="table__container box">
-                    <table class="table">
-                        <tr>
-                            <th></th>
-                            <th>Product Name</th>
-                            <th>Price</th>
-                            <th>Quantity</th>
-                            
-                        </tr>
-                        <tr>
-                            <td><img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image"></td>
-                            <td>Ceramic Name Plates 14"4.5"</td>
-                            <td><span class="table__price">₹2399</span></td>
-                            <td><input type="number" value="3" class="quantity"></td>
-                            <td><i class="fas fa-trash table__trash" title="Remove item"></i></td>               
-                        </tr>
-                        <tr>
-                            <td><img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image"></td>
-                            <td>Ceramic Name Plates 14"4.5"</td>
-                            <td><span class="table__price">₹2399</span></td>
-                            <td><input type="number" value="3" class="quantity"></td>
-                            <td><i class="fas fa-trash table__trash" title="Remove item"></i></td>               
-                        </tr>
-                        <tr>
-                            <td><img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image"></td>
-                            <td>Ceramic Name Plates 14"4.5"</td>
-                            <td><span class="table__price">₹2399</span></td>
-                            <td><input type="number" value="3" class="quantity"></td>
-                            <td><i class="fas fa-trash table__trash" title="Remove item"></i></td>               
-                        </tr>
-                    </table>
+                <div class="box">
+                    <form class="cart-form">
+                        <div class="cart-item">
+                            <img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image">
+                            <div class="item-details">
+                                <div class="item-name">Ceramic Name Plates 14"4.5"</div>
+                                <div class="item-price">₹2399</div>
+                                <div class="item-quantity">
+                                    <label>Quantity:</label>
+                                    <input type="number" value="3" class="quantity">
+                                </div>
+                            </div>
+                            <div class="item-remove">
+                                <i class="fas fa-trash table__trash" title="Remove item"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image">
+                            <div class="item-details">
+                                <div class="item-name">Ceramic Name Plates 14"4.5"</div>
+                                <div class="item-price">₹2399</div>
+                                <div class="item-quantity">
+                                    <label>Quantity:</label>
+                                    <input type="number" value="3" class="quantity">
+                                </div>
+                            </div>
+                            <div class="item-remove">
+                                <i class="fas fa-trash table__trash" title="Remove item"></i>
+                            </div>
+                        </div>
+                    </form>
                     <div class="cart__actions">
                         <a href="#" class="btn flex btn--md">
                             <i class="fi-rs-shopping-bag"></i>Continue Shopping
@@ -206,6 +207,5 @@
     <script src="navi.js"></script>
 </body>
 </html>
-
 
 
