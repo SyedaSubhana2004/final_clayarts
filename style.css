@@ -22,6 +22,7 @@ body {
     border-radius: 50%;
 }
 
+
 .promotion-bar {
     background-color: rgb(236, 236, 177); 
     color: hsl(0, 0%, 0%); /* White text color */
@@ -106,61 +107,61 @@ header i {
 
 .navmenu {
     display: flex;
-  }
+}
   
-  .navmenu a {
+.navmenu a {
     color: black;
     font-size: 18px;
     text-transform: capitalize;
     padding: 10px 20px;
     font-weight: 400;
     transition: all .42s ease;
-  }
+}
   
-  .navmenu a:hover {
+.navmenu a:hover {
     color: rgb(87, 87, 87);
-  }
+}
   
-  .nav-icon {
+.nav-icon {
     display: flex;
     align-items: center;
-  }
+}
   
-  .nav-icon i {
+.nav-icon i {
     margin-right: 20px;
     color: black;
     font-size: 25px;
     font-weight: 400;
     transition: all .42s ease;
-  }
+}
   
-  .nav-icon i:hover {
+.nav-icon i:hover {
     transform: scale(1.1);
     color: rgb(73, 73, 73);
-  }
+}
   
-  #menu-icon {
+#menu-icon {
     font-size: 35px;
     color: black;
     z-index: 10001;
     cursor: pointer;
-  }
-  
-  @media (max-width: 890px) {
+}
+
+@media (max-width: 890px) {
     header {
         padding: 20px 3%;
         transition: .4s;
     }
-  }
+}
   
-  @media (max-width: 750px) {
+@media (max-width: 750px) {
     .navmenu {
         position: absolute;
         top: 100%;
         right: -100%;
         width: 200px;
         height: 100vh; /* This height might be excessive, consider adjusting */
-        background: #f8f8f8e5; 
+        background: #ffffff; 
         display: flex; 
         flex-direction: column; 
         align-items: center;
@@ -176,8 +177,7 @@ header i {
     .navmenu.open {
         right: 0;
     }
-  }
-  
+} 
 .hero {
     position: relative;
     display: flex;
