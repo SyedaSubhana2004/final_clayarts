@@ -717,7 +717,7 @@ header i {
 
     .table th, .table td {
         padding: 20px; /* Adjusted padding */
-        font-size: 7px; /* Adjusted font size */
+        font-size: 12px; /* Adjusted font size */
     }
     
     .cart__actions a {
