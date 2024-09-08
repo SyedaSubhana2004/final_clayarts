@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles-checkout.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="promotion-bar" id="promotionBar" data-aos="fade-down">
+        <span class="promo-text">100 Rupees Off on First Order</span>
+    </div>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.jpeg" alt="ClayArt">
+        </a>
+        
+        
+    
+        <div class="nav-icon">
+            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="index.html"><i class='bx bxs-home'></i></a>
+        </div>
+    </header>
+    <main class="main">
+        <section class="checkout section--lg">
+            <div class="checkout__container container grid">
+                <div class="checkout__grid">
+                    <h3 class="section__title">Billing Details</h3>
+                    <form action="" class="form grid">
+                        <input type="text" placeholder="Name" class="form__input">
+                        <input type="text" placeholder="Address" class="form__input">
+                        <input type="text" placeholder="City" class="form__input">
+                        <input type="text" placeholder="Country" class="form__input">
+                        <input type="text" placeholder="PostCode" class="form__input">
+                        <input type="text" placeholder="Phone" class="form__input">
+                        <input type="email" placeholder="Email" class="form__input">
+                        <h3 class="checkout___title">Additional Information</h3>
+                        <textarea name="" placeholder="Order note" id="" cols="30" rows="10" class="form__input textarea"></textarea>
+                    </form>
+                </div>
+
+                <div class="checkout__group">
+                    <h3 class="section__title">Cart Totals</h3>
+                    <table class="order__table">
+                        <tr>
+                            <th>Products</th>
+                            <th>Quantity</th>
+                            <th>Totals</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="images/NMPRODUCT7.png" alt="" class="order__img">
+                                <h3 class="order__title">Ceramic Name Plates</h3>
+                            </td>
+                            <td><p class="table__quantity">x 2</p></td>
+                            <td><span class="table__price">₹2,200.00</span></td>
+                        </tr>
+                    </table>
+                    <table class="summary__table">
+                        <tr>
+                            <td><span class="summary__title">Subtotal</span></td>
+                            <td><span class="summary__price">₹2,200.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="summary__title">Shipping</span></td>
+                            <td><span class="summary__price">₹50.00</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="summary__title">Total</span></td>
+                            <td><span class="summary__price">₹2,250.00</span></td>
+                        </tr>
+                    </table>
+                    <div class="payment__options">
+                        <h3 class="section__title">How do you want to pay?</h3>
+                        <label class="payment__label">
+                            <input type="radio" name="payment" value="bank_transfer" class="payment__input">
+                            Bank Transfer
+                        </label>
+                        <label class="payment__label">
+                            <input type="radio" name="payment" value="upi" class="payment__input">
+                            UPI Payments
+                        </label>
+                    </div>
+                    <button class="btn btn--checkout"><i class="fi fi-rs-box-alt"></i>Proceed To Pay</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Clay Art provides high-quality customizable name plates for your home and office. Explore our unique designs and craftsmanship.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clayarts41@gmail.com</p>
+                <p>Phone:+91 9342552666 / +91 7892026206</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61558770362937" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ceramic_name_plates?igsh=NHl1Z2gzY3loNzJp" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Also Shop On</h3>
+                <div class="shop-icons">
+                    <a href="https://www.amazon.in/dp/B0916276KW?ref=myi_title_dp" class="shop-icon"><img src="images/amazon.jpg" alt="Amazon"></a>
+                    <a href="https://www.flipkart.com/clayarts-ceramic-wooden-wall-decor-name-plate/p/itmc58a4ea9f4ace?pid=NPLGEVW4V9HRZHTB&q=ceramic+name+plates&store=arb%2Fa77%2Fz9k&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=32a4dcec-df7a-4f66-9bd3-62e5bbce4870.NPLGEVW4V9HRZHTB.SEARCH&ppt=hp&ppn=homepage&ssid=ubqry3dpbk0000001718716460498&qH=4b4453be13d9f476" class="shop-icon"><img src="images/flipkart.png" alt="Flipkart"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="shipping-return-policy.html">Shipping & Return Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Collections</h3>
+                <ul class="collections-links">
+                    <li><a href="index.html">Name Plates</a></li>
+                    <li><a href="index.html">Dashavatar</a></li>
+                    <li><a href="index.html">Royal Touch Name Plates</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Contact</h3>
+                <form class="quick-contact-form">
+                    <input type="email" placeholder="Enter your e-mail*" required>
+                    <textarea placeholder="Write your message*" required></textarea>
+                    <button type="submit">GET IN TOUCH</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClayArt. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="navi.js"></script>
+</body>
+</html>

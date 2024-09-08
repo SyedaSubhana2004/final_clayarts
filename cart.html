@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-cart.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <div class="promotion-bar" id="promotionBar" data-aos="fade-down">
+        <span class="promo-text">100 Rupees Off on First Order</span>
+    </div>
+
+    <a href="https://wa.me/917892026206" class="whatsapp-float" target="_blank">
+        <img src="images/whatsapp.jpg" alt="WhatsApp" class="whatsapp-icon">
+    </a>
+    <header>
+        <a href="#" class="logo">
+            <img src="images/logo.jpeg" alt="ClayArt">
+        </a>
+        
+        
+        <div class="nav-icon">
+            
+            <a href="#"><i class="bx bx-user"></i></a>
+            <a href="index.html"><i class='bx bxs-home'></i></a>
+        </div>
+    </header>
+    
+    <section class="cart section--lg container">
+        <h2 class="cart-heading" style="font-size: 2.5rem;">Your Cart</h2>
+        <div class="cart__group">
+            <div class="cart__left">
+                <div class="box">
+                    <form class="cart-form">
+                        <div class="cart-item">
+                            <img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image">
+                            <div class="item-details">
+                                <div class="item-name">Ceramic Name Plates 14"4.5"</div>
+                                <div class="item-price">₹2399</div>
+                                <div class="item-quantity">
+                                    <label>Quantity:</label>
+                                    <input type="number" value="3" class="quantity">
+                                </div>
+                            </div>
+                            <div class="item-remove">
+                                <i class="fas fa-trash table__trash" title="Remove item"></i>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <img src="images/NMPRODUCT5.png" alt="Product Image" class="product-image">
+                            <div class="item-details">
+                                <div class="item-name">Ceramic Name Plates 14"4.5"</div>
+                                <div class="item-price">₹2399</div>
+                                <div class="item-quantity">
+                                    <label>Quantity:</label>
+                                    <input type="number" value="3" class="quantity">
+                                </div>
+                            </div>
+                            <div class="item-remove">
+                                <i class="fas fa-trash table__trash" title="Remove item"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="cart__actions">
+                        <a href="#" class="btn flex btn--md">
+                            <i class="fi-rs-shopping-bag"></i>Continue Shopping
+                        </a>
+                        <a href="#" class="btn flex btn--md">
+                            <i class="fi-rs-shuffle"></i>Update Cart
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="cart__right">
+                <!-- Apply Coupon Box -->
+                <div class="box apply-coupon">
+                    <h3 class="section__title">Apply Coupon</h3>
+                    <form action="" class="form__group">
+                        <div class="form__group form__group--horizontal">
+                            <input type="text" class="form__input form__input--full" placeholder="Enter Your Coupon">
+                        </div>
+                    </form>
+                    <button type="button" class="applybutton" id="applyCouponBtn">
+                        Apply
+                    </button>
+                    
+                    <div class="coupons-dropdown" id="couponsDropdown">
+                        <a href="#" class="close-coupons-btn">×</a>
+                        <ul>
+                            <li>
+                                <strong>First100</strong>
+                                <p>GET ₹100 OFF ON YOUR FIRST PURCHASE</p>
+                                <button class="apply-coupon-btn">Apply</button>
+                            </li>
+                            <li>
+                                <strong>FreeShipping</strong>
+                                <p>GET FREE SHIPPING ON ORDERS OVER ₹5999</p>
+                                <button class="apply-coupon-btn">Apply</button>
+                            </li>
+                            <!-- Add more coupons as needed -->
+                        </ul>
+                    </div>
+                    <div class="show-coupons">
+                        <a href="#" id="showCouponsBtn">Show Coupons</a>
+                    </div>
+                </div>
+                
+
+    
+                <!-- Cart Totals Box -->
+                <div class="box cart-totals">
+                    <h3 class="section__title">Cart Totals</h3>
+                    <table class="cart__total-table">
+                        <tr>
+                            <td class="cart__total-title">Subtotal:</td>
+                            <td class="cart__total-price">₹7197</td>
+                        </tr>
+                        <tr>
+                            <td class="cart__total-title">Discount:</td>
+                            <td class="cart__total-price">₹100</td>
+                        </tr>
+                        <tr>
+                            <td class="cart__total-title">Shipping:</td>
+                            <td class="cart__total-price">60</td>
+                        </tr>
+                        <tr>
+                            <td class="cart__total-title">Total:</td>
+                            <td class="cart__total-price">₹7097</td>
+                        </tr>
+                    </table>
+                    <a href="checkout.html" class="btn flex btn--md">
+                        <i class="fi fi-rs-box-alt"></i>Proceed To Checkout
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer" data-aos="fade-up" data-aos-duration="1000">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>Clay Art provides high-quality customizable name plates for your home and office. Explore our unique designs and craftsmanship.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: clayarts41@gmail.com</p>
+                <p>Phone:+91 9342552666 / +91 7892026206</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=61558770362937" class="social-icon"><img src="images/facebook.png" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/ceramic_name_plates?igsh=NHl1Z2gzY3loNzJp" class="social-icon"><img src="images/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Also Shop On</h3>
+                <div class="shop-icons">
+                    <a href="https://www.amazon.in/dp/B0916276KW?ref=myi_title_dp" class="shop-icon"><img src="images/amazon.jpg" alt="Amazon"></a>
+                    <a href="https://www.flipkart.com/clayarts-ceramic-wooden-wall-decor-name-plate/p/itmc58a4ea9f4ace?pid=NPLGEVW4V9HRZHTB&q=ceramic+name+plates&store=arb%2Fa77%2Fz9k&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=32a4dcec-df7a-4f66-9bd3-62e5bbce4870.NPLGEVW4V9HRZHTB.SEARCH&ppt=hp&ppn=homepage&ssid=ubqry3dpbk0000001718716460498&qH=4b4453be13d9f476" class="shop-icon"><img src="images/flipkart.png" alt="Flipkart"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="quick-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="shipping-return-policy.css">Shipping & Return Policy</a></li>
+                    <li><a href="terms-conditions.html">Terms and Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Collections</h3>
+                <ul class="collections-links">
+                    <li><a href="index.html">Name Plates</a></li>
+                    <li><a href="index.html">Dashavatar</a></li>
+                    <li><a href="index.html">Royal Touch Name Plates</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Contact</h3>
+                <form class="quick-contact-form">
+                    <input type="email" placeholder="Enter your e-mail*" required>
+                    <textarea placeholder="Write your message*" required></textarea>
+                    <button type="submit">GET IN TOUCH</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ClayArt. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+    <script src="navi.js"></script>
+</body>
+</html>
+
